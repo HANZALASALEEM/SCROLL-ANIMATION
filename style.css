@@ -1,0 +1,28 @@
+body {
+	background-color: bisque;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.box {
+	background-color: rgb(97, 147, 28);
+	width: 150px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	border-radius: 8px;
+	margin: 10px;
+	box-shadow: 7px 6px 8px rgb(39 60 9);
+	transform: translateX(400%);
+	transition: transform 0.4s ease;
+	/* overflow-x: auto; */
+}
+.box:nth-of-type(even) {
+	transform: translateX(-400%);
+}
+
+.box.show {
+	transform: translateX(0);
+}
